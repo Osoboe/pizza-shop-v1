@@ -1,0 +1,73 @@
+$am-font-family: "Gilroy";
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Regular.woff") format("woff"),
+    url("/fonts/Gilroy-Regular.ttf") format("ttf"),
+    url("/fonts/Gilroy-Regular.eof") format("eof");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Medium.woff") format("woff"),
+    url("/fonts/Gilroy-Medium.ttf") format("ttf"),
+    url("/fonts/Gilroy-Medium.eof") format("eof");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Bold.woff") format("woff"),
+    url("/fonts/Gilroy-Bold.ttf") format("ttf"),
+    url("/fonts/Gilroy-Bold.eof") format("eof");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Extrabold.woff") format("woff"),
+    url("/fonts/Gilroy-Extrabold.ttf") format("ttf"),
+    url("/fonts/Gilroy-Extrabold.eof") format("eof");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Black.woff") format("woff"),
+    url("/fonts/Gilroy-Black.ttf") format("ttf"),
+    url("/fonts/Gilroy-Black.eof") format("eof");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-Heavy.woff") format("woff"),
+    url("/fonts/Gilroy-Heavy.ttf") format("ttf"),
+    url("/fonts/Gilroy-Heavy.eof") format("eof");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $am-font-family;
+  src: url("/fonts/Gilroy-HeavyItalic.woff") format("woff"),
+    url("/fonts/Gilroy-HeavyItalic.ttf") format("ttf"),
+    url("/fonts/Gilroy-HeavyItalic.eof") format("eof");
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+}
+
+//fonts: black, extrabold, bold, medium, regular

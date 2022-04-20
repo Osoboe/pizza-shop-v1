@@ -1,0 +1,58 @@
+.root {
+    padding: 50px;
+    display: flex;
+  
+    &__left {
+        flex: 2;
+
+        &__table {
+            width: 100%;
+            border-spacing: 20px;
+
+            &__imgContainer {
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            &__name {
+                font-weight: 500;
+                color: #d1411e;
+                font-size: 18px;
+            }
+
+            &__total {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__right {
+        flex: 1;
+
+        &__wrapper {
+            width: 90%;
+            max-height: 300px;
+            background-color: #333;
+            padding: 50px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+
+            &__button {
+                height: 30px;
+                color: #d1411e;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+
+            &__totalTextTitle {
+                margin-right: 10px;
+            }
+        }
+    }
+}
