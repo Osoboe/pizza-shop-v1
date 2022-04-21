@@ -13,7 +13,7 @@ const ProductList = () => {
             </p>
             <div className={styles.root__wrapper}>
                 {products.map((pizza) => {
-                    return <ProductCard pizza={pizza} key={0}/>
+                    return <ProductCard pizza={pizza} key={pizza.id}/>
                 })}
     
             </div>
