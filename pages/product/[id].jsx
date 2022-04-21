@@ -2,7 +2,7 @@ import styles from "./Product.module.scss";
 import Image from "next/image";
 import products from '/mocks/products.json'
 
-export const getStaticPaths = () => {
+export const getStaticPaths = async () => {
   const paths = products.map(pizza => {
     return {
       params: { id: pizza.id}
@@ -15,8 +15,8 @@ export const getStaticPaths = () => {
   }
 }
 
-export const getStaticProps = (context) => {
-  const id = context.params.id;
+export const getStaticProps = async (context) => {
+  const id = context.params.id-1;
   const data = products[id];
 
   return {
