@@ -1,6 +1,6 @@
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -20,10 +20,10 @@ const Navbar = () => {
                         <li className={styles.root__links__list__item}>Homepage</li>
                     </Link>
                     <Link href='#products' scroll={false}>
-                        <li className={styles.root__links__list__item} passHref>Products</li>
+                        <li className={styles.root__links__list__item}>Products</li>
                     </Link>
                     <Link href='#contact' scroll={false}>
-                        <li className={styles.root__links__list__item} passHref>Contact</li>
+                        <li className={styles.root__links__list__item}>Contact</li>
                     </Link>
                 </ul>
             </div>
