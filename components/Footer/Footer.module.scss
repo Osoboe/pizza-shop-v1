@@ -3,10 +3,18 @@
     background-color: #222;
     display: flex;
 
-    &__item {
+    &__img {
         flex: 1;
         position: relative;
         display: flex;
+    }
+
+    &__contacts {
+        position: relative;
+        display: flex;
+        flex: 2;
+        padding: 50px;
+        justify-content: space-between;
 
         &__card {
             flex: 1;
@@ -27,9 +35,12 @@
         }
     }
 
-    &__item:last-child {
-        flex: 2;
-        padding: 50px;
-        justify-content: space-between;
-    }
+    @media screen {
+        &__contacts__card__motto {
+          @media (max-width:1000px){
+            display: none;
+            flex: 3;
+          }
+        }
+      }
 }

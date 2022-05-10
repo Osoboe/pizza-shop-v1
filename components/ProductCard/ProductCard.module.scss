@@ -34,4 +34,16 @@
         display: block;
         overflow: hidden;
     }
+
+    @media screen {
+        &__desc {
+            @media (max-width:940px){
+                display: none;
+            }
+        } 
+    }
+
+    @media screen and (max-width:940px) {
+        width: 60%;
+    }
 }

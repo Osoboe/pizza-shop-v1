@@ -52,4 +52,16 @@
         position: absolute;
         bottom: 0;
     }
+
+    @media screen {
+        &__wrapper {
+            @media (max-width:800px){
+                display: none;
+            }
+        } 
+    }
+
+    @media screen and (max-width:900px) {
+        display: none;
+    }
 }
