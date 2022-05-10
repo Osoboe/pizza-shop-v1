@@ -1,6 +1,6 @@
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
-import { Link }  from 'react-scroll'
+import Link from 'next/Link'
 
 const Navbar = () => {
     return (
@@ -16,20 +16,24 @@ const Navbar = () => {
             </div>
             <div className={styles.root__links}>
                 <ul className={styles.root__links__list}>
-                    <a className={styles.root__links__list__item} href="/" passHref>
-                        <li>Homepage</li>
-                    </a>
-                   <Link to="products" spy={true} smooth={true} offset={-100} duration={500} className={styles.root__links__list__item}>Products</Link>
-                   <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className={styles.root__links__list__item}>Contact</Link>
+                    <Link href='/'>
+                        <li className={styles.root__links__list__item}>Homepage</li>
+                    </Link>
+                    <Link href='#products' scroll={false}>
+                        <li className={styles.root__links__list__item} passHref>Products</li>
+                    </Link>
+                    <Link href='#contact' scroll={false}>
+                        <li className={styles.root__links__list__item} passHref>Contact</li>
+                    </Link>
                 </ul>
             </div>
             <div className={styles.root__cartwrapper}>
-                <a href="/cart" passHref>
+                <Link href="/cart" passHref>
                     <div className={styles.root__cartwrapper__cart}>
                         <Image src="/image/cart.png" alt="" width="30px" height="30px" />
                         <div className={styles.root__cartwrapper__cart__counter}>3</div>
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     )
